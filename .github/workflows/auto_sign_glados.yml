@@ -25,5 +25,5 @@ jobs:
 
       # 执行仓库里面的脚本文件
       - name: 'Run auto sign script'
-        run: bash ./glados_sign/auto_sign_glados.sh ${{ secrets.COOKIE }}
+        run: bash ./glados_sign/auto_sign_glados.sh "${{ secrets.COOKIE }}"
 
