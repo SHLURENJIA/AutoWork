@@ -4,7 +4,6 @@ name: CI
 
 # Controls when the workflow will run
 on:
-  push:
   schedule:
   - cron: '30 9 * * *'
 
@@ -26,4 +25,8 @@ jobs:
       # 执行仓库里面的脚本文件
       - name: 'Run auto sign script'
         run: bash ./glados_sign/auto_sign_glados.sh "${{ secrets.COOKIE }}"
+        
+      # 提交changelog
+      - name: 'Commit auto sign log'
+        run:
 
