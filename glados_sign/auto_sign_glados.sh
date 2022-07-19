@@ -9,7 +9,7 @@ params=$2
 url="https://glados.rocks/api/user/checkin"
 RESULT=$(curl -H "cookie:${cookie}"\
  -H "Content-Type: application/json"\
- -d "${params}"\
+ -d "{\"token\": \"glados.network\"}"\
  -X POST $url)
 
 echo -e $RESULT >> ./auto_sign_glados_log.txt
