@@ -3,9 +3,9 @@
 name: CI
 
 # Controls when the workflow will run
-on:
-  schedule:
-  - cron: '00 12 * * *'
+# on:
+#   schedule:
+#   - cron: '00 12 * * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -24,5 +24,5 @@ jobs:
 
       # 执行仓库里面的脚本文件
       - name: 'Run auto sign script'
-        run: bash ./glados_sign/auto_sign_glados.sh "${{ secrets.COOKIE }}" "${{ secrets.PARAMS }}"
+        run: bash ./glados_sign/auto_sign_glados.sh 
 
