@@ -3,7 +3,7 @@
 # $1为第一个参数，$0为文件名
 
 #设置第一个参数为cookie
-cookie="cf_clearance=uLKtWDIX8Qfgi.9CE0sLl60FT65IIfDU8Zl5bbZ2GCI-1660007870-0-150; koa:sess=eyJ1c2VySWQiOjEzMzU0MiwiX2V4cGlyZSI6MTY5NjU4MjY1Mjc2MiwiX21heEFnZSI6MjU5MjAwMDAwMDB9; koa:sess.sig=lnWAL4vC26RR3WPP1lBq6rHxXUw; _gid=GA1.2.1460297591.1677726462; _ga=GA1.2.189203472.1677399788; _gat_gtag_UA_104464600_2=1; _ga_CZFVKMNT9J=GS1.1.1677767944.3.1.1677767952.0.0.0"
+cookie="_gid=GA1.2.39552139.1688738683; koa:sess=eyJ1c2VySWQiOjEzMzU0MiwiX2V4cGlyZSI6MTcxNDY1ODc1NTE1NSwiX21heEFnZSI6MjU5MjAwMDAwMDB9; koa:sess.sig=rKVhHieKMNI3UURYBHfvsVcRs4k; Cookie=enabled; Cookie.sig=lbtpENsrE0x6riM8PFTvoh9nepc; _gat_gtag_UA_104464600_2=1; _ga=GA1.1.1536041039.1688738683; _ga_CZFVKMNT9J=GS1.1.1688799249.3.1.1688799286.0.0.0"
 
 url="https://glados.rocks/api/user/checkin"
 RESULT=$(curl -H "cookie:${cookie}"\
