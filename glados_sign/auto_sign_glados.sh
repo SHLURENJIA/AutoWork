@@ -3,7 +3,7 @@
 # $1为第一个参数，$0为文件名
 
 #设置第一个参数为cookie
-cookie="_gid=GA1.2.39552139.1688738683; koa:sess=eyJ1c2VySWQiOjEzMzU0MiwiX2V4cGlyZSI6MTcxNDY1ODc1NTE1NSwiX21heEFnZSI6MjU5MjAwMDAwMDB9; koa:sess.sig=rKVhHieKMNI3UURYBHfvsVcRs4k; Cookie=enabled; Cookie.sig=lbtpENsrE0x6riM8PFTvoh9nepc; _gat_gtag_UA_104464600_2=1; _ga=GA1.1.1536041039.1688738683; _ga_CZFVKMNT9J=GS1.1.1688799249.3.1.1688799286.0.0.0"
+cookie="_gid=GA1.2.1333749710.1693920904; koa:sess=eyJ1c2VySWQiOjEzMzU0MiwiX2V4cGlyZSI6MTcxOTg0MDk3NTcyNiwiX21heEFnZSI6MjU5MjAwMDAwMDB9; koa:sess.sig=4mo65n14N73EZp1n32ml2PsqUiI; _gat_gtag_UA_104464600_2=1; _ga=GA1.1.255512646.1693920904; _ga_CZFVKMNT9J=GS1.1.1693920903.1.1.1693921003.0.0.0"
 
 url="https://glados.rocks/api/user/checkin"
 RESULT=$(curl -H "cookie:${cookie}"\
@@ -13,7 +13,7 @@ RESULT=$(curl -H "cookie:${cookie}"\
  -H "sec-ch-ua: \"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\""\
  -H "sec-ch-ua-platform: \"macOS\""\
  -H "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"\
- -d "{\"token\": \"glados.network\"}"\
+ -d "{\"token\": \"glados.one\"}"\
  -X POST $url)
 
 #echo -e $RESULT >> ./auto_sign_glados_log.txt
